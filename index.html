@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <title>Personal Portfolio</title>
+
+    <style>
+        .project_item:hover {
+            transform: scale(1.1);
+            transition: transform 1s ease-out;
+        }
+        .col {
+            position: relative;
+            z-index: 100;
+        }
+        .none_1 {
+            position: absolute;
+            bottom: 0%;
+            display: none;
+        }
+        .col-12 a img:hover .none_1 {
+            display: block;
+            
+        }
+        .col-12 a img:hover .none_1 a {
+            font-weight: bold;
+            font-size: 2rem;
+            text-decoration: none;
+            color: black;
+        }
+        .nav-pills li button {
+            font-size: 13px;
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+<!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
+        <div class="container-lg">
+        <a class="navbar-brand" href="#home">K.Q</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-5">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+        </div>
+    </div>
+    </nav>
+<!-- /Navbar Section -->
+
+<!-- Home Section -->
+    <section id="home">
+        <div class="container-fluid min-vh-100 d-flex align-items-center justify-content-center mt-sm-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="home-img  d-flex align-items-center justify-content-center">
+                        <img src="./profile_img.jpg" class="w-50 h-50 rounded-circle text-center" alt="Profile Image">
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex align-items-center justify-content-center text-center mt-sm-5">
+                    <div class="home-text ">
+                        <p class="h4 text-muted ">Hello there I`m</p>
+                        <h1>Web Developer</h1>
+                        <h2 class="text-primary">Kamalov Quvomiddin</h2>
+                        <p class="lead">Curious about building real-world web applications</p>
+                        <a href="https://t.me/kamalovquvomiddin">
+                            <i class="bi bi-telegram text-primary mx-3" style="font-size: 2rem;"></i>
+                        </a>
+                        <a href="https://intagram.com/kamalovquvomiddin">
+                            <i style="font-size: 2rem;" class="bi mx-3 bi-instagram text-primary"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/quvomiddin-kamalov-83629a28b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B7dPi7h92T06synfDowPcAg%3D%3D">
+                            <i class="bi mx-3 bi-linkedin text-primary" style="font-size: 2rem;"></i>
+                        </a>
+                        <a href="https://github.com/Kamalov-Q">
+                            <i class="bi bi-github text-primary mx-3"  style="font-size: 2rem;"></i>
+                        </a>
+                        <br><br>
+                        <a class="btn btn-outline-primary" href="#projects">See My Work</a>
+                        <a class="btn btn-primary" href="#contact">Hire me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- /Home Section -->
+<hr>
+<!-- About Section -->
+    <section id="about" class="my-5">
+        <div class="container mh-100 text-sm-center text-md-center">
+            <div class="row">
+                <div class="col-md-3">
+                    <div>
+                        <p class="fw-bold">Education : </p>
+                        <ul>
+                            <li class="list-unstyled">Student of Inha University (2023-2027)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div>
+                        <p class="fw-bold">Experience</p>
+                        <ul>
+                            <li class="list-unstyled">New to Web Development</li>
+                            <li class="list-unstyled">Learnt frontend with the help of You Tube tutorials</li>
+                            <li class="list-unstyled">Completed various projects</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <p class="fw-bold">Technical Skills : </p>
+                    <ul>
+                        <li class="list-unstyled">HTML5</li>
+                        <li class="list-unstyled">CSS3</li>
+                        <li class="list-unstyled">Bootstrap5</li>
+                        <li class="list-unstyled">Tailwind CSS</li>
+                        <li class="list-unstyled">SASS, SCSS</li>
+                        <li class="list-unstyled">JavaScript</li>
+                        <li class="list-unstyled">React JS</li>
+                        <li class="list-unstyled">Redux</li>
+                        <li class="list-unstyled">Next JS</li>
+                        <li class="list-unstyled">TypeScript</li>
+                        <li class="list-unstyled">Material UI</li>
+                        <li class="list-unstyled">Styled Components</li>
+                        <li class="list-unstyled">Ant Design</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <p class="fw-bold">Other Skills</p>
+                    <ul>
+                        <li class="list-unstyled">Uzbek (Native)</li>
+                        <li class="list-unstyled">English (IELTS 6.0)</li>
+                    </ul>
+                    <p class="fw-bold">Soft Skills</p>
+                    <ul>
+                        <li class="list-unstyled">Accurate</li>
+                        <li class="list-unstyled">Patient</li>
+                        <li class="list-unstyled">Consistent</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- /About Section -->
+<hr>
+
+<!-- Projects Section -->
+<section id="projects" class="mt-5">
+    <div class="container">
+        <div class="text-sm-center">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="all-tab" data-bs-toggle="pill" data-bs-target="#all" type="button" role="tab" aria-controls="all" aria-selected="true">All</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="javascript-tab" data-bs-toggle="pill" data-bs-target="#javascript" type="button" role="tab" aria-controls="javascript" aria-selected="false">JavaScript</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="reactJS-tab" data-bs-toggle="pill" data-bs-target="#reactJS" type="button" role="tab" aria-controls="reactJS" aria-selected="false">React JS</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="bootstrap-tab" data-bs-toggle="pill" data-bs-target="#bootstrap" type="button" role="tab" aria-controls="bootstrap" aria-selected="true">Bootstrap 5</button>
+                </li>
+              </ul>
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+                    <div class="row flex-wrap">
+                        <div class="col-12 col-md-4 mb-3">
+                            <a href="https://kamalov-q.github.io/land/" class="project_item">
+                                <img src="./Responsive.png" width="350" height="300" alt="Responsive image">
+                            </a>
+                            <div><p class="text-primary fw-bold">Bootstrap 5</p></div>
+                        </div>
+                        <div class="col-12 col-md-4 mb-3"><!-- New changes ---22.06.2024 -->
+                            <a href="https://kamalovsdiscoverinvest.netlify.app/" class="project_item">
+                                <img src="./Diuz.png" width="350" height="300" alt="Discover Invest image">
+                            </a>
+                            <div><p class="text-primary fw-bold"> React JS</p></div>
+                        </div>
+                        <!-- Changes 22.06.2024 01:50-->
+                        <div class="col-12 col-md-4 mb-3">
+                            <a href="https://kamalovszamontour.netlify.app/" class="project_item">
+                                <img src="./zamon.png" width="350" height="300" alt="Zamon Tour image">
+                            </a>
+                            <div><p class="text-primary fw-bold"> React JS</p></div>
+                        </div>
+                        <div class="col-12 col-md-4 mb-3">
+                            <a href="https://kamalovsmovieapp.netlify.app/" class="project_item">
+                                <img src="./MovieLand.png" width="350" height="300" alt="MovieLand image">
+                            </a>
+                            <div><p class="text-primary fw-bold"> React JS</p></div>
+                        </div>
+                        <div class="col-12 col-md-4 mb-3">
+                            <a href="https://kamalovstodolist.netlify.app/" class="project_item"><img src="./TodoList.png"  alt="placeholder image" width="350" height="300">
+                            </a>
+                            <div><p class="text-primary fw-bold">React JS</p></div>
+                        </div>
+                        <div class="col-12 col-md-4 mb-3">
+                            <a href="https://kamalovscalculator.netlify.app/" class="project_item">
+                                <img src="./Calculator.png" width="350" height="300" alt="Responsive image">
+                            </a>
+                            <div><p class="text-primary fw-bold">React JS</p></div>
+                        </div>
+                        <div class="col-12 col-md-4 mb-3">
+                            <a href="https://kamalov-q.github.io/stopwatch_1/" class="project_item">
+                                <img src="./StopWatch.png" width="350" height="300" alt="StopWatch image">
+                            </a>
+                            <div><p class="text-primary fw-bold">JavaScript</p></div>
+                        </div>
+                        <!-- <div class="col-12 col-md-4 mb-3">
+                            <a href="https://66478890d8a3d0f7686cc00f--timely-arithmetic-5b133a.netlify.app/" class="project_item">
+                                <img src="./newsApp.png" width="350" height="300" alt="Clock image">
+                            </a>
+                            <div><p class="text-primary fw-bold">React JS</p></div>
+                        </div> -->
+                        <!-- <div class="col-12 col-md-4 mb-3">
+                            <a href="https://kamalov-q.github.io/dictionary/" class="project_item">
+                                <img src="./Dictionary.png" width="350" height="300" alt="Responsive image">
+                            </a>
+                            <div><p class="text-primary fw-bold">JavaScript</p></div>
+                        </div> -->
+                        <div class="col-12 col-md-4 mb-3">
+                            <a href="https://kamalov-q.github.io/Rock_Paper_Scissors/Rock.html" class="project_item">
+                                <img src="./Rock, paper, scissors.png" width="350" height="300" alt="StopWatch image">
+                            </a>
+                            <div><p class="text-primary fw-bold">JavaScript</p></div>
+                        </div>
+                        <div class="col-12 col-md-4 mb-3">
+                            <a href="https://kamalov-q.github.io/clock/" class="project_item">
+                                <img src="./Digital Clock.png" width="350" height="300" alt="Clock image">
+                            </a>
+                            <div><p class="text-primary fw-bold">JavaScript</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="javascript" role="tabpanel" aria-labelledby="javascript-tab">
+                    <div class="row">
+                        <div class="col-12 col-md-4 mb-3">
+                            <a href="https://kamalov-q.github.io/stopwatch_1/" class="project_item">
+                                <img src="./StopWatch.png" width="350" height="300" alt="StopWatch image">
+                            </a>
+                            <div><p class="text-primary fw-bold">JavaScript</p></div>
+                        </div>
+                        <div class="col-12 col-md-4 mb-3">
+                            <a href="https://kamalov-q.github.io/clock/" class="project_item">
+                                <img src="./Digital Clock.png" width="350" height="300" alt="Clock image">
+                            </a>
+                            <div><p class="text-primary fw-bold">JavaScript</p></div>
+                        </div>
+                        <!-- <div class="col-12 col-md-4 mb-3">
+                            <a href="https://kamalov-q.github.io/dictionary/" class="project_item">
+                                <img src="./Dictionary.png" width="350" height="300" alt="Responsive image">
+                            </a>
+                            <div><p class="text-primary fw-bold">JavaScript</p></div>
+                        </div> -->
+                        <div class="col-12 col-md-4 mb-3">
+                            <a href="https://kamalov-q.github.io/Rock/Rock.html" class="project_item">
+                                <img src="./Rock, paper, scissors.png" width="350" height="300" alt="StopWatch image">
+                            </a>
+                            <div><p class="text-primary fw-bold">JavaScript</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="reactJS" role="tabpanel" aria-labelledby="reactJS-tab">
+                    <div class="row">
+                        <div class="col-12 col-md-4 mb-3"><!-- New changes ---22.06.2024 -->
+                            <a href="https://kamalovsdiscoverinvest.netlify.app/" class="project_item">
+                                <img src="./Diuz.png" width="350" height="300" alt="Discover Invest image">
+                            </a>
+                            <div><p class="text-primary fw-bold"> React JS</p></div>
+                        </div>
+                        <!-- Changes 22.06.2024 01:50-->
+                        <div class="col-12 col-md-4 mb-3">
+                            <a href="https://kamalovszamontour.netlify.app/" class="project_item">
+                                <img src="./zamon.png" width="350" height="300" alt="Zamon Tour image">
+                            </a>
+                            <div><p class="text-primary fw-bold"> React JS</p></div>
+                        </div>
+                        <div class="col-12 col-md-4 mb-3">
+                            <a href="https://kamalovsmovieapp.netlify.app/" class="project_item">
+                                <img src="./MovieLand.png" width="350" height="300" alt="MovieLand image">
+                            </a>
+                            <div><p class="text-primary fw-bold"> React JS</p></div>
+                        </div>
+                        <div class="col-12 col-md-4 mb-3">
+                            <a href="https://kamalovstodolist.netlify.app/" class="project_item"><img src="./TodoList.png"  alt="placeholder image" width="350" height="300">
+                            </a>
+                            <div><p class="text-primary fw-bold">React JS</p></div>
+                        </div>
+                        <div class="col-12 col-md-4 mb-3">
+                            <a href="https://kamalovscalculator.netlify.app/" class="project_item">
+                                <img src="./Calculator.png" width="350" height="300" alt="Responsive image">
+                            </a>
+                            <div><p class="text-primary fw-bold">React JS</p></div>
+                        </div>
+                        <!-- <div class="col-12 col-md-4 mb-3">
+                            <a href="https://66478890d8a3d0f7686cc00f--timely-arithmetic-5b133a.netlify.app/" class="project_item">
+                                <img src="./newsApp.png" width="350" height="300" alt="Clock image">
+                            </a>
+                            <div><p class="text-primary fw-bold">React JS</p></div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="bootstrap" role="tabpanel" aria-labelledby="bootstrap-tab">
+                    <div class="row">
+                        <div class="col-12 col-md-4 mb-3">
+                            <a href="https://kamalov-q.github.io/land/" class="project_item">
+                                <img src="./Responsive.png" width="350" height="300" alt="Responsive image">
+                            </a>
+                            <div><p class="text-primary fw-bold">Bootstrap 5</p></div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+        </div>
+        
+    </div>
+</section>
+<!-- /Projects Section -->
+
+<hr>
+<!-- Contact Section -->
+    
+    <section id="contact"  style="font-size: 1.5rem;" class="container mt-5 d-flex justify-content-center align-items-center">
+        <div class="row ">
+                <div class="col-12">
+                    <p>Phone : +998(91) 071 40 27</p>
+                    <p>Telegram : <a href="https://t.me/kamalovquvomiddin">Telegram</a></p>
+                    <p>LinkedIn : <a href="https://www.linkedin.com/in/quvomiddin-kamalov-83629a28b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B7dPi7h92T06synfDowPcAg%3D%3D">LinkedIn</a></p>
+                    <p>Address : <a href="https://maps.app.goo.gl/NbttYtyr7NJjjMSp6">Address<i class="bi bi-geo-alt-fill"></i></a></p>    
+                </div>
+        </div>
+            
+    </section>
+
+
+
+<!-- /Contact Section -->
+
+<!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
